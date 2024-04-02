@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #ffffff;
+    font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+#Cabecario {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    grid-template-areas:
+    "zd"
+    "cd"
+    "vd"
+    "md"
+    "xd"
+    "bd"
+    "nd";
+    grid-template-columns: 100%;
+    grid-template-rows: 48px 52px 70vh 70vh 70vh 230px 54px;
+}
+
+.zdiv{
+    grid-area: zd;
+    background-color: #fcf7f7;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "zd1 zd2";
+    grid-template-columns: 50% 50%;
+}
+.zdiv1{
+    grid-area: zd1;
+    color: #59595A;
+    font-size: 11px;
+    margin-top: 10px;
+    margin-left: 74px;
+}
+.zdiv2{
+    grid-area: zd2;
+    margin-top: 11px;
+    margin-left: 170px;
+}
+
+.barra-navegacao{
+    flex-direction: row;
+    background-color: #1e1b54;
+}
+
+.barra-navegacao ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-navegacao li {
+    margin-right: 10px;
+    position: relative;
+    padding: 0.5rem;
+}
+
+.barra-navegacao li:last-child {
+    margin-right: 0; 
+}
+
+.barra-navegacao li::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -5px; 
+    transform: translateY(-50%);
+    width: 1px;
+    height: 60%; 
+    background-color: #777777; 
+}
+
+.teste{
+    background-color: black;
+}
+
+
+.bdiv{
+    grid-area: bd;
+    background-color: #1e1b54;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "bd1 bd2 bd3";
+    grid-template-columns: 30% 35% 35%;
+    font-size: 14.2px;
+    
+}
+
+.links-uteis{
+    grid-area: bd1;
+    margin-left: 89px;
+    margin-top: 44px;
+    line-height: 1.5;
+    
+}
+.contatos{
+    grid-area: bd2;
+    margin-top: 44px;
+    margin-left: 83px;
+}
+.certificados{
+    grid-area: bd3;
+    margin-top: 44px;
+    margin-left: 12px;
+}
+
+.ndiv{
+    grid-area: nd;
+    background-color: #80b2ad;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
