@@ -32,6 +32,13 @@ a {
     cursor: pointer;
 }
 
+.header_div1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    cursor: pointer;
+}
+
 .img_header{
     padding: 3rem;
 }
@@ -41,6 +48,7 @@ a {
     color: #fff;
     border-radius: 15px;
     margin: 3px;
+    width: 100%;
 }
 
 .barra-navegacao {
@@ -49,16 +57,21 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    min-width: 320px;
 }
 
 main{
-    margin-right: 5rem;
-    margin-left: 5rem;
+    width: 1000px;
+    margin: auto;
+    min-width: 320px;
+    max-width: 1000px;
 }
 
 .img_slideF img {
     height: 237px;
-    width: 1140px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1000px;
 }
 
 .div_servicos {
@@ -89,6 +102,8 @@ main{
     background-color: #fff;
     object-fit: cover;
     cursor: pointer;
+    
+   
 }
 
 .flex_Servicos > div:hover {
@@ -150,3 +165,99 @@ main{
     text-align: center;
 }
 
+@media only screen and (max-width: 1125px) {
+
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+    .header_div1 {
+        display: none;
+    }
+
+    .nav_bar {
+        width: auto;
+    }
+
+    .barra-navegacao {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img_slideF {
+        display: none;
+    }
+
+    .flex_Servicos {
+        flex-direction: column;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .div_servicos {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .flex_Servicos > div {
+        max-width: 300px;
+        margin: auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 805px) {
+
+    .header {
+        display: flex;
+        justify-content: center;
+        min-width: 800px;
+    }
+    .header_div1 {
+        display: none;
+    }
+
+    .nav_bar {
+        width: auto;
+        min-width: 800px;
+    }
+
+    .barra-navegacao {
+        display: flex;
+        flex-direction: column;
+        min-width: 800px;
+    }
+
+    .img_slideF {
+        display: none;
+    }
+
+    .flex_Servicos {
+        flex-direction: column;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .div_servicos {
+        max-width: 600px;
+        margin-left: 127px;
+        
+        
+    }
+
+    .flex_Servicos > div {
+       
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        min-width: 800px;
+    }
+
+}
