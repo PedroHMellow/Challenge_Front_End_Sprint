@@ -6,46 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel do Paciente</title>
     <link rel="stylesheet" href="Panel_do_Paciente.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-
+ 
 <body>
-    <header>
-    <div class="Cabecario">
-        <div class="zdiv">
-            <a href="https://www.google.com/maps?ll=-23.555586,-46.672815&z=16&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=4554229573118434579" class="zdiv1">
-                <img src="https://icr.usp.br/wp-content/uploads/2017/11/location_ico.png">&nbsp;&nbsp;&nbsp;&nbsp;
-                AV. DR. ENÉAS CARVALHO DE AGUIAR, 647, SÃO PAULO - SP&nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="https://icr.usp.br/wp-content/uploads/2017/11/phone_ico.png">&nbsp;&nbsp;&nbsp;&nbsp;(11) 2661-8500</a>
-                <ul class="zdiv2">
-                    <form action="icr.usp.br/?s=" method="get">
-                        <input type="text" name="q" id="zdivpesquisa">
-                        <input type="submit" value="Pesquisar" id="zdivbotao">
-                    </form>
-                </ul>
-        </div>
 
-        <nav class="barra-navegacao">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PACIENTES E ACOMPANHANTES</a></li>
-                <li><a href="#">PROFISSIONAIS DA SAÚDE</a></li>
-                <li><a href="#">ENSINO E PESQUISA</a></li>
-                <li><a href="#">O HOSPITAL</a></li>
-                <li><a href="#">O HOSPITAL</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="header_div">
+            <img src="https://portalpaciente.icr.usp.br/portal/static/media/logo.9761a2e6.jpg" alt="Logo_HC">
+        </div>
+        <div class="header_div">
+            <img src="https://icr.usp.br/wp-content/uploads/2017/11/location_ico.png" alt="Ícone de localização" class="img_header">
+            <p>
+                AV. DR. ENÉAS CARVALHO DE AGUIAR, 647, SÃO PAULO - SP
+            </p>
+            <img src="https://icr.usp.br/wp-content/uploads/2017/11/phone_ico.png" alt="Ícone de telefone" class="img_header">
+            <p>
+                (11) 2661-8500
+            </p>
+        </div>
     </header>
 
+    <nav class="nav_bar">
+        <ul class="barra-navegacao">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PACIENTES E ACOMPANHANTES</a></li>
+            <li><a href="#">PROFISSIONAIS DA SAÚDE</a></li>
+            <li><a href="#">ENSINO E PESQUISA</a></li>
+            <li><a href="#">O HOSPITAL</a></li>
+            <li><a href="#">O HOSPITAL</a></li>
+        </ul>
+    </nav>
+    
+
     <main>
-        <div class="teste">
-            Main
-            <br>
-            Main
-            <br>
-            Main
-            <br>
-            Main
+        <div class="img_slideF">
+            <img src="https://sigma.icr.usp.br/ContadoresAtena/BANNER_PORTAL/3711.png" alt="First slide">
         </div>
+        
+        <section>
+            <div class="div_servicos">
+                <h3 class="titulo_servicos"> 
+                    Nossos Serviços 
+                </h3>
+            </div>
+
+            <div class="grid_Servicos">
+                <div class="grid_card">
+                    <img src="/card-1.429e1ba9.png">
+                    <h5>Titulo</h5>
+                    <p>Descrição</p>
+                </div>
+            </div>
+
+            <div class="grid_Servicos">
+                <img src="" alt="">
+                <h5>Titulo</h5>
+                <p>Descrição</p>
+            </div>
+
+            <div class="grid_Servicos">
+                <img src="" alt="">
+                <h5>Titulo</h5>
+                <p>Descrição</p>
+            </div>
+
+        </section>
     </main>
 
 
