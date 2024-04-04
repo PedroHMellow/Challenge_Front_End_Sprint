@@ -4,16 +4,6 @@
     box-sizing: border-box;
 } 
 
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-.roboto-condensed-<uniquifier> {
-
-font-optical-sizing: auto;
-font-weight: <weight>;
-font-style: normal;
-} */
-
 body, ul, li, p {
     list-style: none;
     font-size: 1.2rem;
@@ -22,7 +12,7 @@ body, ul, li, p {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: #fff;
 }
 
 
@@ -62,8 +52,8 @@ a {
 }
 
 main{
-    margin: 5rem;
-    margin-top: 0;
+    margin-right: 5rem;
+    margin-left: 5rem;
 }
 
 .img_slideF img {
@@ -84,22 +74,43 @@ main{
     font-size: 55px;
 }
 
-.grid_Servicos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 1140px;
+.flex_Servicos {
+    display: flex;
+    background-color: rgb(211, 204, 204);
+    max-width: 1150px;
     margin: 0 auto;
-    grid-gap: 20px;
-    background-color: rgb(218, 213, 213);
+    flex-wrap: wrap;
 }
 
-.grid_card {
-    background-color: f0f0f0;
+
+.flex_Servicos > div {
+    flex: 1 1 200px;
+    margin: 1rem;
+    background-color: #fff;
+    object-fit: cover;
+    cursor: pointer;
 }
 
-.grid_Servicos img {
-    height: 138px;
-    width: 117px;
+.flex_Servicos > div:hover {
+    transform: scale(1.1);
+}
+
+
+.flex_Servicos img {
+    width: 60%;
+    display: block;
+    margin-left: 3rem;
+}
+
+.servicosT {
+    font-size: 25px;
+    color: #1e1b54;
+    margin: 0.5rem;
+}
+
+.servicios_tex {
+    font-size: 18px;
+    margin: 0.5rem;
 }
 
 .bdiv{
@@ -111,6 +122,7 @@ main{
     grid-template-areas: "bd1 bd2 bd3";
     grid-template-columns: 30% 35% 35%;
     font-size: 14.2px;
+    margin-top: 5px;
     
 }
 
